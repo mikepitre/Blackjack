@@ -1,5 +1,5 @@
 class Player
-  attr_accessor :hand, :name, :score
+  attr_accessor :deck, :name, :score
 
   def initialize
     @score = 0

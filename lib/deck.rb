@@ -5,7 +5,7 @@ class Deck
     suits = [:hearts, :diamonds, :clubs, :spades]
     suits.each do |suit|
       (2..10).each do |value|
-        @cards << (Card.new(suit, value))
+        @cards.push(Card.new(suit, value))
       end
       @cards.push(Card.new(suit, 10.1)) #J
       @cards.push(Card.new(suit, 10.2)) #Q

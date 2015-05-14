@@ -7,13 +7,16 @@ class Card
   end
 
   def display
-    "
+    """
      ----
     | #{suit} |
     | #{display_value} |
      ----
-    "
+    """
   end
+
+  # def display_both
+  # end
 
   def display_value
     case value
