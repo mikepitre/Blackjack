@@ -8,24 +8,21 @@ class Card
 
   def display
     "
-     -------
-    | #{suit}|
-    | #{display_value}|
-    |        |
-    |        |
-    |        |
-    |        |
-     --------
-     "
+     ----
+    | #{suit} |
+    | #{display_value} |
+     ----
+    "
   end
 
   def display_value
     case value
-    when 11 then "J"
-    when 12 then "Q"
-    when 13 then "K"
-    when 14 then "A"
+    when 10.1 then "J"
+    when 10.2 then "Q"
+    when 10.3 then "K"
+    when 11 then "A"
     else
       value
     end
+  end
 end
